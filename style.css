@@ -1,0 +1,25 @@
+cd.mtki {
+  font-family: Oleo Script;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: normal !important;
+}
+
+.mtk5 {
+  font-family: Ubuntu Mono !important;
+  letter-spacing: 1px;
+  font-style: italic !important;
+}
+
+.mtkb {
+  font-family: Fira Code;
+  font-weight: normal !important;
+  font-size: 0.88em;
+}
+
+.mtku {
+  font-family: Input Mono;
+  text-decoration: none;
+  text-underline-position: none;
+  font-size: 1.05em;
+}
