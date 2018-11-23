@@ -2,11 +2,11 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Cobalt2",
   "workbench.fontAliasing": "antialiased",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "editor.fontFamily": " Ubuntu Mono, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "vscode_custom_css.imports": ["file:///Users/Glenn/VSCodeStyle.css"],
-  "editor.fontSize": 24,
+  "editor.fontSize": 25,
   "editor.fontWeight": "400",
   "editor.suggestLineHeight": 28,
   "editor.letterSpacing": 0.5,
@@ -38,6 +38,21 @@
     "javascript": "jsx"
   },
   "explorer.confirmDelete": false,
+  "emojisense.languages": {
+    "markdown": true,
+    "plaintext": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "git-commit": true,
+    "javascript": true
+  },
+  "editor.tabCompletion": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.lineHeight": 1.5,
   "editor.tokenColorCustomizations": {
     "textMateRules": [{
         "scope": ["entity.name.class.js"],
@@ -70,7 +85,7 @@
       {
         "scope": ["support.constant.property-value.css"],
         "settings": {
-          "foreground": "#ebd13d"
+          "foreground": "#FFC600"
         }
       },
       {
@@ -149,19 +164,11 @@
       }
     ]
   },
-  "emojisense.languages": {
-    "markdown": true,
-    "plaintext": {
-      "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
-    },
-    "git-commit": true,
-    "javascript": true
-  },
-  "editor.tabCompletion": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "vsicons.dontShowNewVersionMessage": true,
-  "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
-  "terminal.integrated.letterSpacing": 1,
-  "terminal.integrated.lineHeight": 1.5
+  "workbench.colorCustomizations": {
+    "[Cobalt2]": {
+      "sideBar.background": "#193549",
+      "editor.background": "#193549",
+      "editorGutter.background": "#193549"
+    }
+  }
 }
