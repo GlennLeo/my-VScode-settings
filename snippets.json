@@ -1,0 +1,83 @@
+{
+	"Next Icon": {
+		"prefix": ">>",
+		"body": [
+			"→",
+		],
+		"description": "Add icon Next"
+	},
+	"Previous Icon": {
+		"prefix": "<<",
+		"body": [
+			"←",
+		],
+		"description": "Add icon Previous"
+	},
+	"Console.log data": {
+		"prefix": "csl",
+		"body": [
+			"console.log($1);",
+		],
+		"description": "Console.log data"
+	},
+	"create gql": {
+		"prefix": "gql",
+		"body": [
+			"gql`",
+			"  $1",
+			"`;"
+		],
+		"description": "create gql"
+	},
+	"create styled component": {
+		"prefix": "styled",
+		"body": [
+			"styled.$1`",
+			"",
+			"`;"
+		],
+		"description": "create styled component"
+	},
+	"use theme props": {
+		"prefix": "prt",
+		"body": [
+			"${props => props.theme.$1}"
+		],
+		"description": "using theme props"
+	},
+	"add style property": {
+		"prefix": "stl",
+		"body": [
+			"style={styles.$1}"
+		],
+		"description": "add style in react"
+	},
+	"I18n": {
+		"prefix": "i18",
+		"body": [
+			"I18n.t('$1')"
+		],
+		"description": "using i18n"
+	},
+	"setup global theme": {
+		"prefix": "createGlobalStyle",
+		"body": [
+			"createGlobalStyle`",
+			"  html {",
+			"    box-sizing: border-box;",
+			"    font-size: 10px;",
+			"  }",
+			"  *, *:before, *:after {",
+			"    box-sizing: inherit;",
+			"  }",
+			"  body {",
+			"    padding: 0;",
+			"    margin: 0;",
+			"    font-size: $1;",
+			"  }",
+			"`;"
+		],
+		"description": "setup global theme"
+	},
+
+}
