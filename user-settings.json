@@ -3,10 +3,10 @@
   "workbench.colorTheme": "Cobalt2",
   "workbench.fontAliasing": "antialiased",
   "window.zoomLevel": -1,
-  "editor.fontFamily": " Ubuntu Mono, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Inconsolata, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "vscode_custom_css.imports": ["file:///Users/Glenn/VSCodeStyle.css"],
-  "editor.fontSize": 25,
+  "editor.fontSize": 20,
   "editor.fontWeight": "400",
   "editor.suggestLineHeight": 28,
   "editor.letterSpacing": 0.5,
@@ -47,7 +47,7 @@
     "git-commit": true,
     "javascript": true
   },
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "on",
   "workbench.iconTheme": "material-icon-theme",
   "vsicons.dontShowNewVersionMessage": true,
   "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
@@ -55,15 +55,18 @@
   "terminal.integrated.lineHeight": 1.5,
   "editor.tokenColorCustomizations": {
     "textMateRules": [{
-        "scope": ["entity.name.class.js"],
+        "scope": [
+          "entity.name.class.js",
+          "keyword.control.flow.js",
+        ],
         "settings": {
-          "foreground": "#fb94ffff"
+          "foreground": "#ff628cff"
         }
       },
       {
         "scope": ["entity.name.function.method.js"],
         "settings": {
-          "foreground": "#f781d9"
+          "foreground": "#FFC600"
         }
       },
       {
@@ -95,6 +98,12 @@
         }
       },
       {
+        "scope": ["variable.language.this.js"],
+        "settings": {
+          "foreground": "#ff628cff"
+        }
+      },
+      {
         "scope": ["entity.other.attribute-name.class.css"],
         "settings": {
           "foreground": "#00ff22"
@@ -114,10 +123,37 @@
           "entity.other.attribute-name.jsx",
           "storage.type.extends.js",
           "keyword.operation.graphql",
-
+          "constant.language.boolean.true.js",
+          "constant.language.boolean.false.js",
         ],
         "settings": {
           "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "storage.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#FFC600"
+        }
+      },
+      {
+        "scope": [
+          "JSXNested"
+        ],
+        "settings": {
+          "foreground": "#fff"
+        }
+      },
+      {
+        "scope": [
+          "string.quoted.module.js",
+          "string.quoted.double.js"
+        ],
+        "settings": {
+          "foreground": "#49e9a6ff"
         }
       },
       {
@@ -136,6 +172,8 @@
       {
         "scope": [
           "meta.brace.curly.js",
+          "meta.brace.square.js",
+          "meta.brace.round.js",
           "punctuation.section.embedded.end.jsx",
           "punctuation.section.embedded.begin.jsx",
           "meta.brace.curly.litobj.js",
@@ -166,9 +204,36 @@
   },
   "workbench.colorCustomizations": {
     "[Cobalt2]": {
-      "sideBar.background": "#193549",
-      "editor.background": "#193549",
-      "editorGutter.background": "#193549"
+      "sideBar.background": "#002b36ff",
+      "sideBar.dropBackground": "#002b36ff",
+      "sideBarSectionHeader.background": "#004050",
+      "sideBar.border": "#004050",
+      "editorGroupHeader.tabsBackground": "#002b36ff",
+      "tab.inactiveBackground": "#002b36ff",
+      "tab.activeBackground": "#004050",
+      "tab.border": "#004050",
+      "list.activeSelectionBackground": "#004050",
+      "list.focusBackground": "#004050",
+      "list.hoverBackground": "#004050",
+      "input.background": "#004050",
+      "activityBar.background": "#002b36ff",
+      "activityBar.border": "#004050",
+      "statusBar.background": "#002b36ff",
+      "titleBar.inactiveBackground": "#002b36ff",
+      "titleBar.activeBackground": "#002b36ff",
+      "titleBar.border": "#004050",
+      "menu.background": "#002b36ff",
+      "dropdown.background": "#002b36ff",
+      "editor.background": "#002b36ff",
+      "editorGutter.background": "#002b36ff",
+      "panel.dropBackground": "#002b36ff",
+      "panel.background": "#002b36ff",
+      "terminal.background": "#002b36ff",
+      "terminal.border": "#004050",
+      "panel.border": "#ffef0b"
     }
-  }
+  },
+  "breadcrumbs.enabled": true,
+  "sync.gist": "cdd265d9493fd475c85a7f08e1380209",
+  "java.errors.incompleteClasspath.severity": "ignore"
 }
