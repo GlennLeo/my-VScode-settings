@@ -1,239 +1,260 @@
 {
-  "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Cobalt2",
-  "workbench.fontAliasing": "antialiased",
-  "window.zoomLevel": -1,
-  "editor.fontFamily": "Inconsolata, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "vscode_custom_css.imports": ["file:///Users/Glenn/VSCodeStyle.css"],
-  "editor.fontSize": 20,
-  "editor.fontWeight": "400",
-  "editor.suggestLineHeight": 28,
-  "editor.letterSpacing": 0.5,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "files.trimTrailingWhitespace": true,
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.shell.osx": "zsh",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "gitlens.currentLine.enabled": false,
-  "editor.hover.delay": 1000,
-  //Setup eslint and prettier
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "prettier.disableLanguages": ["js"],
-  "auto-close-tag.SublimeText3Mode": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "explorer.confirmDragAndDrop": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  //Emmet config
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "explorer.confirmDelete": false,
-  "emojisense.languages": {
-    "markdown": true,
-    "plaintext": {
-      "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false
+    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 20,
+    "editor.lineHeight": 45,
+    "workbench.fontAliasing": "antialiased",
+    "editor.letterSpacing": 0.5,
+    "files.trimTrailingWhitespace": true,
+    "editor.fontWeight": "400",
+    "editor.cursorBlinking": "blink",
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": false,
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.suggestSelection": "first",
+    "explorer.confirmDragAndDrop": false,
+    "editor.wordWrap": "on",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "terminal.integrated.fontSize": 16,
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "sync.gist": "57d70cc8c733344219c16e2415ccb94d",
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.dragAndDrop": false,
+    // turn it off for JS
+    "[javascript]": {
+        "editor.formatOnSave": false
     },
-    "git-commit": true,
-    "javascript": true
-  },
-  "editor.tabCompletion": "on",
-  "workbench.iconTheme": "material-icon-theme",
-  "vsicons.dontShowNewVersionMessage": true,
-  "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
-  "terminal.integrated.letterSpacing": 1,
-  "terminal.integrated.lineHeight": 1.5,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [{
-        "scope": [
-          "entity.name.class.js",
-          "keyword.control.flow.js",
-        ],
-        "settings": {
-          "foreground": "#ff628cff"
+    // Optional: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+    "prettier.disableLanguages": [
+        "js"
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "terminal.integrated.fontFamily": "Source code pro, Menlo, Monaco, 'Courier New', monospace",
+    "workbench.tree.indent": 18,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    // BELOW IS MY VIM SETTINGS
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
-      },
-      {
-        "scope": ["entity.name.function.method.js"],
-        "settings": {
-          "foreground": "#FFC600"
-        }
-      },
-      {
-        "scope": [
-          "string.unquoted.js",
-          "entity.name.tag.open.jsx",
-          "entity.name.tag.close.jsx"
-        ],
-        "settings": {
-          "foreground": "#04cafc"
-        }
-      },
-      {
-        "scope": ["comment", "punctuation.definition.comment.js"],
-        "settings": {
-          "foreground": "#6e9bce"
-        }
-      },
-      {
-        "scope": ["support.constant.property-value.css"],
-        "settings": {
-          "foreground": "#FFC600"
-        }
-      },
-      {
-        "scope": ["entity.name.tag.styledcss.js"],
-        "settings": {
-          "foreground": "#ff9d00ff"
-        }
-      },
-      {
-        "scope": ["variable.language.this.js"],
-        "settings": {
-          "foreground": "#ff628cff"
-        }
-      },
-      {
-        "scope": ["entity.other.attribute-name.class.css"],
-        "settings": {
-          "foreground": "#00ff22"
-        }
-      },
-      {
-        "scope": [
-          "support.class.component.open.jsx",
-          "support.class.component.close.jsx"
-        ],
-        "settings": {
-          "foreground": "#12f088"
-        }
-      },
-      {
-        "scope": [
-          "entity.other.attribute-name.jsx",
-          "storage.type.extends.js",
-          "keyword.operation.graphql",
-          "constant.language.boolean.true.js",
-          "constant.language.boolean.false.js",
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "scope": [
-          "storage.type.class.js"
-        ],
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#FFC600"
-        }
-      },
-      {
-        "scope": [
-          "JSXNested"
-        ],
-        "settings": {
-          "foreground": "#fff"
-        }
-      },
-      {
-        "scope": [
-          "string.quoted.module.js",
-          "string.quoted.double.js"
-        ],
-        "settings": {
-          "foreground": "#49e9a6ff"
-        }
-      },
-      {
-        "scope": [
-          "punctuation.section.embedded.end.jsx",
-          "punctuation.section.class.end.js",
-          "punctuation.section.class.begin.js",
-          "storage.type.function.arrow.js",
-          "keyword.operator.comparison.js",
-          "keyword.operator.relational.js"
-        ],
-        "settings": {
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": [
-          "meta.brace.curly.js",
-          "meta.brace.square.js",
-          "meta.brace.round.js",
-          "punctuation.section.embedded.end.jsx",
-          "punctuation.section.embedded.begin.jsx",
-          "meta.brace.curly.litobj.js",
-          "meta.brace.round.js",
-          "punctuation.section.property-list.begin.bracket.curly.css",
-          "punctuation.section.property-list.end.bracket.curly.css",
-          "punctuation.section.class.begin.js",
-          "punctuation.section.class.end.js"
-        ],
-        "settings": {
-          "fontStyle": "underline"
-        }
-      },
-      {
-        "scope": [
-          "invalid",
-          "keyword.operator",
-          "constant.numeric.css",
-          "keyword.other.unit.px.css",
-          "constant.numeric.decimal.js",
-          "constant.numeric.json"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      }
-    ]
-  },
-  "workbench.colorCustomizations": {
-    "[Cobalt2]": {
-      "sideBar.background": "#002b36ff",
-      "sideBar.dropBackground": "#002b36ff",
-      "sideBarSectionHeader.background": "#004050",
-      "sideBar.border": "#004050",
-      "editorGroupHeader.tabsBackground": "#002b36ff",
-      "tab.inactiveBackground": "#002b36ff",
-      "tab.activeBackground": "#004050",
-      "tab.border": "#004050",
-      "list.activeSelectionBackground": "#004050",
-      "list.focusBackground": "#004050",
-      "list.hoverBackground": "#004050",
-      "input.background": "#004050",
-      "activityBar.background": "#002b36ff",
-      "activityBar.border": "#004050",
-      "statusBar.background": "#002b36ff",
-      "titleBar.inactiveBackground": "#002b36ff",
-      "titleBar.activeBackground": "#002b36ff",
-      "titleBar.border": "#004050",
-      "menu.background": "#002b36ff",
-      "dropdown.background": "#002b36ff",
-      "editor.background": "#002b36ff",
-      "editorGutter.background": "#002b36ff",
-      "panel.dropBackground": "#002b36ff",
-      "panel.background": "#002b36ff",
-      "terminal.background": "#002b36ff",
-      "terminal.border": "#004050",
-      "panel.border": "#ffef0b"
-    }
-  },
-  "breadcrumbs.enabled": true,
-  "sync.gist": "cdd265d9493fd475c85a7f08e1380209",
-  "java.errors.incompleteClasspath.severity": "ignore"
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<tab>"
+            ],
+            "after": [
+                "%"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<space>"
+            ],
+            "commands": [
+                ":nohl",
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "d"
+            ],
+            "commands": [
+                "editor.action.goToDeclaration"
+            ]
+        },
+        {
+            "before": [
+                ";",
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>",
+            ],
+            "commands": [
+                "workbench.action.navigateLeft"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>",
+            ],
+            "commands": [
+                "workbench.action.navigateRight"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>",
+            ],
+            "commands": [
+                "workbench.action.navigateDown"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>",
+            ],
+            "commands": [
+                "workbench.action.navigateUp"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "<tab>"
+            ],
+            "after": [
+                "%"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                "editor.action.addSelectionToNextFindMatch"
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        },
+    ],
+    "vim.leader": ",",
+    "vim.handleKeys": {},
+    "terminal.integrated.fontWeightBold": "normal",
+    "editor.overviewRulerBorder": false,
+    "debug.showBreakpointsInOverviewRuler": true,
+    "terminal.integrated.rendererType": "dom",
+    "workbench.panel.defaultLocation": "right",
+    "editor.minimap.enabled": false,
+    "todo-tree.highlights.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "todo-tree.tree.showScanModeButton": false,
 }
